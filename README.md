@@ -14,7 +14,7 @@ A simple full stack social media app with CRUD and Authorization/Authentication 
 * JavaScript
 * SASS
 
-$$ Project Setup
+## Project Setup
 - Clone the repository in a local folder
     ```sh
     git clone https://github.com/fizaashraf37/smwa-project.git 
