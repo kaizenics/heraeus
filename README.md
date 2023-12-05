@@ -17,7 +17,7 @@ A simple full stack social media app with CRUD and Authorization/Authentication 
 ## Project Setup
 - Clone the repository in a local folder
     ```sh
-    git clone https://github.com/fizaashraf37/smwa-project.git 
+    git clone https://github.com/kaizenics/heraeus-social-media-app.git 
     ```
 - Verify if node and npm are installed
   ```sh
@@ -27,18 +27,18 @@ A simple full stack social media app with CRUD and Authorization/Authentication 
 ## Backend Setup
 - Navigate to cloned project directory
   ```sh
-    cd smwa-project
+    cd backend
     ```
 - Create a python virtual environment for backend
   ```sh
-    python3 -m venv myvenv
+    python -m venv project_venv
     ```
 - Activate the virtual environment
   ```sh
   # For winodws
-    myvenv\Scripts\activate
+    project_venv\Scripts\activate
   # For linux
-    source myvenv/bin/activate
+    source project_venv/bin/activate
     ```
 - Install python libraries
   ```sh
@@ -49,12 +49,12 @@ A simple full stack social media app with CRUD and Authorization/Authentication 
   ```sh
    python manage.py runserver
     ```
-- Django backend server will start on http://localhost:8000/
+- Django backend server will start on http://127.0.0.1:8000/
 
 ## Frontend Setup
 - Open a new terminal and navigate to frontend directory
   ```sh
-   cd smwa-project/frontend
+   cd backend/tech-blog
     ```
 - Install frontend libraries using npm
   ```sh
