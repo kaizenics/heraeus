@@ -1,0 +1,228 @@
+@font-face {
+  font-family: Questrial;
+  src: url(../fonts/Questrial-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lexend-Medium;
+  src: url(../fonts/Lexend-Medium.ttf);
+}
+
+@font-face {
+    font-family: Lexend-Bold;
+    src: url(../fonts/Lexend-Bold.ttf);
+  }
+
+.image-ctn {
+  display: flex;
+  justify-content: center;
+
+  img {
+    width: 250px;
+    height: 180px;
+    margin: 100px 0px 30px 0px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.text-desc-2 {
+  p {
+    color: #9e9e9e;
+    font-size: 30px;
+    text-align: center;
+    font-family: Lexend-Medium;
+    text-transform: uppercase;
+  }
+
+  p span {
+    color: #fff;
+    font-family: Questrial;
+  }
+}
+
+.text-auth-desc-2 {
+  margin: 30px 0px 10px 0px;
+  color: #cacaca;
+  text-align: center;
+  font-family: Questrial;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 340px;
+  height: 130px;
+  margin: 50px 0px 50px 0px;
+
+  h2 {
+    color: #fff;
+    font-size: 20px;
+    font-family: Questrial;
+  }
+}
+
+.form-group {
+  position: relative;
+
+  input {
+    width: 94%;
+    padding: 15px 10px;
+    color: #fff;
+    font-family: Questrial;
+    font-size: 20px;
+    border: none;
+    background-color: #171a1b;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+    margin-bottom: 30px;
+
+    &:focus {
+      border-bottom-color: #007bff;
+    }
+  }
+}
+
+.auth-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    color: #fff;
+    font-family: Questrial;
+    margin: 15px 0px 0px 0px;
+  }
+
+  p span {
+    color: #007bff;
+    cursor: pointer;
+  }
+}
+
+.auth-login-btn-2 {
+  color: #fff;
+  margin: 20px 0 0 0px;
+  padding: 12px 145px;
+  background-color: transparent;
+  opacity: 1;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Lexend-Medium;
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.3s ease;
+}
+
+.auth-login-btn-2:hover {
+  background-color: #fff;
+  color: #171a1b;
+}
+
+.auth-signup-btn-2 {
+    color: #171a1b;
+    margin: 20px 0 0 0px;
+    padding: 12px 40px;
+    background-color: #fff;
+    opacity: 1;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: Lexend-Bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease, opacity 0.3s ease;
+  }
+  
+  .auth-signup-btn-2:hover {
+    background-color: #dddddd;
+  }
+
+.end-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.end-2 div {
+  width: 18%;
+  height: 1px;
+  margin-top: 25px;
+  background: #515151;
+}
+
+// SIGN UP //
+
+.login-box-1 {
+  width: 340px;
+  height: 500px;
+  margin: 50px 0px 50px 0px;
+
+  h2 {
+    color: #fff;
+    font-size: 20px;
+    font-family: Questrial;
+  }
+}
+
+.form-group-2 {
+  position: relative;
+
+  input {
+    width: 94%;
+    padding: 15px 10px;
+    color: #fff;
+    font-family: Questrial;
+    font-size: 20px;
+    border: none;
+    background-color: #171a1b;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+    margin-bottom: 30px;
+
+    &:focus {
+      border-bottom-color: #007bff;
+    }
+  }
+}
+
+.auth-btn-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    color: #fff;
+    font-family: Questrial;
+    margin: 15px 0px 0px 0px;
+  }
+
+  p span {
+    color: #007bff;
+    cursor: pointer;
+  }
+}
+
+.auth-login-btn-3 {
+  color: #fff;
+  padding: 12px 45px;
+  background-color: transparent;
+  opacity: 1;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Lexend-Medium;
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.3s ease;
+}
+
+.auth-login-btn-3:hover {
+  background-color: #fff;
+  color: #171a1b;
+}

@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Questrial;
+    src: url(../fonts/Questrial-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lexend-Medium;
+    src: url(../fonts/Lexend-Medium.ttf);
+}
+
+.navbar {
+    background-color: #2e2e2e;
+    border-bottom: 1px solid #585858;;
+    padding: 0.5rem 0;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+    justify-content: space-between;
+}
+
+.image {
+    display: flex;
+    margin-top: 7px;
+    margin-left: 10%;
+
+    p {
+        color: #9e9e9e;
+        font-size: 20px;
+        text-align: center;
+        margin: 8px 10px;
+        font-family: Lexend-Medium;
+        text-transform: uppercase;
+    }
+
+    p span {
+        color: #fff;
+        font-family: Questrial;
+    }
+}
+
+.navbar img {
+    width: auto;
+    height: 40px;
+}
+
+.navbar-nav {
+    display: flex;
+    margin-right: 8%;
+}
+
+.nav-icons {
+    margin: 10px 20px;
+    font-size: 35px;
+    color: #d4d3d3;
+    cursor: pointer;
+}
+
+.user-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 10px;
+
+    p {
+        color: #fff;
+        font-size: 20px;
+        font-family: Questrial;
+        margin: 0;
+    }
+}
