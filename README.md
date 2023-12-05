@@ -1,6 +1,6 @@
 
 <div align="center">
-  <h1>ADV102 Project - Heraeus Social Media App</h1>
+  <h1>ADV103 Project - Heraeus Social Media App</h1>
 </div>
 
 ## About
