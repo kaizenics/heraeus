@@ -1,6 +1,6 @@
 
 <div align="center">
-  <h1>Heraeus Social Media App</h1>
+  <h1>ADV102 Project - Heraeus Social Media App</h1>
 </div>
 
 ## About
@@ -65,7 +65,7 @@ A simple full stack social media app with CRUD and Authorization/Authentication 
    npm start
     ```
 - Once node is started you can access the application on http://localhost:3000/
-- 
+
 ## Contributing
 
 Please refer to each project's style and contribution guidelines for submitting patches and additions. In general, we follow the "fork-and-pull" Git workflow.
