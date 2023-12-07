@@ -68,7 +68,7 @@ class PostViewSet(ModelViewSet):
         return self.serializer_class.Meta.model.objects.all()
     
     def post(self, request, *args, **kwargs): 
-        serializer = PostSerializer(data=request.data)
+        serializer = self.get_serializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)  
@@ -77,10 +77,41 @@ class PostViewSet(ModelViewSet):
     def get(self, request, pk=None, *args, **kwargs): 
         if pk is not None:
             try:
-                auth_instance = self.serializer_class.Meta.model.objects.get(id=pk)
-                serializer = PostSerializer(auth_instance)
+                post_instance = self.serializer_class.Meta.model.objects.get(id=pk)
+                serializer = PostSerializer(post_instance)
                 return Response(serializer.data)
             except self.serializer_class.Meta.model.DoesNotExist:
                 return Response(status=status.HTTP_404_NOT_FOUND)
-            
-    
+
+    def put(self, request, pk=None, *args, **kwargs):
+        if pk is not None:
+            try:
+                post_instance = self.serializer_class.Meta.model.objects.get(id=pk)
+                serializer = self.get_serializer(post_instance, data=request.data)
+                if serializer.is_valid():
+                    serializer.save()
+                    return Response(serializer.data)
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            except self.serializer_class.Meta.model.DoesNotExist:
+                return Response(status=status.HTTP_404_NOT_FOUND)
+
+    def patch(self, request, pk=None, *args, **kwargs):
+        if pk is not None:
+            try:
+                post_instance = self.serializer_class.Meta.model.objects.get(id=pk)
+                serializer = self.get_serializer(post_instance, data=request.data, partial=True)
+                if serializer.is_valid():
+                    serializer.save()
+                    return Response(serializer.data)
+                return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            except self.serializer_class.Meta.model.DoesNotExist:
+                return Response(status=status.HTTP_404_NOT_FOUND)
+
+    def delete(self, request, pk=None, *args, **kwargs):
+        if pk is not None:
+            try:
+                post_instance = self.serializer_class.Meta.model.objects.get(id=pk)
+                post_instance.delete()
+                return Response(status=status.HTTP_204_NO_CONTENT)
+            except self.serializer_class.Meta.model.DoesNotExist:
+                return Response(status=status.HTTP_404_NOT_FOUND)
