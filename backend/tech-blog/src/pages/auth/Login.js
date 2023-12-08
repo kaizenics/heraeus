@@ -25,10 +25,14 @@ export default function Login() {
     try {
       const response = await axios.post('http://127.0.0.1:8000/api/login/', formData);
       console.log(response.data);
-      localStorage.setItem('token', response.data.access);
-      localStorage.setItem('username', formData.username);
-      alert('Login successful')
-      navigate('/main/Home');
+      if (response.data.access) {
+        localStorage.setItem('token', response.data.access);
+        localStorage.setItem('username', formData.username);
+        alert('Login successful');
+        navigate('/main/Home');
+      } else {
+        alert('Invalid credentials');
+      }
     } catch (error) {
       console.error(error);
       alert('Invalid credentials');
@@ -89,7 +93,9 @@ export default function Login() {
               Login
             </button>
             <p>
-              Forgot password? <span>Click here</span>
+              Forgot password? <span>
+                <Link to="/auth/forgot-password" className="forgot-pw">Click here</Link>
+              </span>
             </p>
           </div>
 
