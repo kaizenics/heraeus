@@ -9,9 +9,18 @@
 }
 
 @font-face {
-    font-family: Lexend-Bold;
-    src: url(../fonts/Lexend-Bold.ttf);
-  }
+  font-family: Lexend-Bold;
+  src: url(../fonts/Lexend-Bold.ttf);
+}
+
+.error-text {
+  color: #ff0000;
+  font-size: 15px;
+  font-family: Questrial;
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
 
 .image-ctn {
   display: flex;
@@ -99,11 +108,13 @@
     font-family: Questrial;
     margin: 15px 0px 0px 0px;
   }
+}
 
-  p span {
-    color: #007bff;
-    cursor: pointer;
-  }
+.forgot-pw {
+  color: #007bff;
+  cursor: pointer;
+  font-family: Questrial;
+  text-decoration: none;
 }
 
 .auth-login-btn-2 {
@@ -126,21 +137,21 @@
 }
 
 .auth-signup-btn-2 {
-    color: #171a1b;
-    margin: 20px 0 0 0px;
-    padding: 12px 40px;
-    background-color: #fff;
-    opacity: 1;
-    border-radius: 5px;
-    font-size: 16px;
-    font-family: Lexend-Bold;
-    cursor: pointer;
-    transition: background-color 0.2s ease, opacity 0.3s ease;
-  }
-  
-  .auth-signup-btn-2:hover {
-    background-color: #dddddd;
-  }
+  color: #171a1b;
+  margin: 20px 0 0 0px;
+  padding: 12px 40px;
+  background-color: #fff;
+  opacity: 1;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Lexend-Bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.3s ease;
+}
+
+.auth-signup-btn-2:hover {
+  background-color: #dddddd;
+}
 
 .end-2 {
   display: flex;
@@ -211,7 +222,207 @@
 
 .auth-login-btn-3 {
   color: #fff;
-  padding: 12px 45px;
+  padding: 12px 135px;
+  background-color: transparent;
+  opacity: 1;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: Lexend-Medium;
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.3s ease;
+}
+
+.auth-login-btn-3:hover {
+  background-color: #fff;
+  color: #171a1b;
+}
+
+// FORGOT PASSWORD SECTION //
+
+.forgot-password-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 200px 50px 0px 50px;
+
+  h1 {
+    color: #fff;
+    font-size: 30px;
+    font-family: Lexend-Medium;
+  }
+
+  p {
+    width: 350px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-family: Questrial;
+    text-align: center;
+  }
+}
+.forgot-password-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forgot-password-form {
+  width: 340px;
+  height: 200px;
+  margin: 30px 0px 50px 0px;
+
+  h2 {
+    color: #fff;
+    font-size: 20px;
+    font-family: Questrial;
+  }
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.form-group-3 {
+  position: relative;
+
+  input {
+    width: 94%;
+    padding: 15px 10px;
+    color: #fff;
+    font-family: Questrial;
+    font-size: 20px;
+    border: none;
+    background-color: #171a1b;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+    margin-bottom: 10px;
+
+    &:focus {
+      border-bottom-color: #007bff;
+    }
+  }
+}
+
+.auth-forgot-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    color: #fff;
+    font-family: Questrial;
+    margin: 15px 0px 0px 0px;
+  }
+
+  p span {
+    color: #007bff;
+    cursor: pointer;
+  }
+}
+
+.forgot-password-btn {
+  color: #fff;
+  padding: 12px 140px;
+  background-color: transparent;
+  opacity: 1;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Lexend-Medium;
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.3s ease;
+  text-decoration: none;
+  margin-top: 25px;
+}
+
+.forgot-password-btn:hover {
+  background-color: #fff;
+  color: #171a1b;
+}
+
+// OTP SECTION //
+
+.otp-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 150px 50px 0px 50px;
+
+  h1 {
+    color: #fff;
+    font-size: 30px;
+    font-family: Lexend-Medium;
+  }
+}
+
+.envelop-icon {
+  color: #fff;
+  font-size: 120px;
+  margin-bottom: 10px;
+}
+
+.otp-form {
+  width: 340px;
+  height: 120px;
+  margin: 20px 0px 50px 0px;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.form-group-4 {
+  position: relative;
+
+  input {
+    width: 94%;
+    padding: 15px 10px;
+    color: #fff;
+    font-family: Questrial;
+    font-size: 20px;
+    border: none;
+    background-color: #171a1b;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+    margin-bottom: 30px;
+
+    &:focus {
+      border-bottom-color: #007bff;
+    }
+  }
+}
+
+.auth-otp-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    color: #fff;
+    font-family: Questrial;
+    margin: 15px 0px 0px 0px;
+  }
+
+  p span {
+    color: #007bff;
+    cursor: pointer;
+  }
+}
+
+.otp-btn {
+  color: #fff;
+  padding: 12px 125px;
   background-color: transparent;
   opacity: 1;
   border: 2px solid #fff;
@@ -222,7 +433,93 @@
   transition: background-color 0.2s ease, opacity 0.3s ease;
 }
 
-.auth-login-btn-3:hover {
+.otp-btn:hover {
+  background-color: #fff;
+  color: #171a1b;
+}
+
+// CHANGE PASSWORD SECTION //
+
+.change-password-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 280px 50px 0px 50px;
+
+  h1 {
+    color: #fff;
+    font-size: 30px;
+    font-family: Lexend-Medium;
+  }
+}
+
+.change-password-form {
+  width: 340px;
+  height: 120px;
+  margin: 20px 0px 50px 0px;
+
+  button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.form-group-5 {
+  position: relative;
+
+  input {
+    width: 94%;
+    padding: 15px 10px;
+    color: #fff;
+    font-family: Questrial;
+    font-size: 20px;
+    border: none;
+    background-color: #171a1b;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+    margin-bottom: 30px;
+
+    &:focus {
+      border-bottom-color: #007bff;
+    }
+  }
+}
+
+.auth-change-pass-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    color: #fff;
+    font-family: Questrial;
+    margin: 15px 0px 0px 0px;
+  }
+
+  p span {
+    color: #007bff;
+    cursor: pointer;
+  }
+}
+
+.change-pass-btn {
+  color: #fff;
+  padding: 12px 150px;
+  background-color: transparent;
+  opacity: 1;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Lexend-Medium;
+  cursor: pointer;
+  transition: background-color 0.2s ease, opacity 0.3s ease;
+}
+
+.change-pass-btn:hover {
   background-color: #fff;
   color: #171a1b;
 }
