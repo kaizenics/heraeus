@@ -11,7 +11,7 @@ opencv-contrib-python==4.9.0.80
 opencv-python==4.8.1.78
 Pillow==10.2.0
 PyJWT==2.8.0
-pytz==2023.3
+pytz==2023.4
 requests==2.31.0
 resources==0.0.1
 sqlparse==0.4.4
