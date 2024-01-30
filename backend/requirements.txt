@@ -8,7 +8,7 @@ djangorestframework-simplejwt==5.3.1
 idna==3.6
 numpy==1.25.2
 opencv-contrib-python==4.9.0.80
-opencv-python==4.8.1.78
+opencv-python==4.9.0.80
 Pillow==10.2.0
 PyJWT==2.8.0
 pytz==2023.3
